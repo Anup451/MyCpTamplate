@@ -9,9 +9,6 @@ using namespace std;
 // using namespace chrono;
 // using namespace __gnu_pbds;
 
-// def
-// #define AbhinavAwasthi 1
-
 //Speed
 #define Code ios_base::sync_with_stdio(false);
 #define By cin.tie(NULL);
