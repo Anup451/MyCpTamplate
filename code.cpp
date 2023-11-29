@@ -1,3 +1,4 @@
+
 // Auther :Anup Suresh Jujagar
 // B.tech :Indian Institute Of Information Technology, Dharwad
 // Branch :Computer Science And Engineering
@@ -16,7 +17,7 @@ using namespace std;
 #define Code ios_base::sync_with_stdio(false);
 #define By cin.tie(NULL);
 #define SetBitCoder cout.tie(NULL);
-
+# define int long long
 //Aliases
 using ll= long long;
 using lld= long double;
@@ -26,25 +27,6 @@ using ull= unsigned long long;
 const lld pi= 3.141592653589793238;
 const ll INF= LONG_LONG_MAX;
 const ll mod=1e9+7;
-
-//TypeDEf
-typedef pair<ll, ll> pll;
-typedef vector<ll> vll;
-typedef vector<pll> vpll;
-typedef vector<string> vs;
-typedef unordered_map<ll,ll> umll;
-typedef map<ll,ll> mll;
-
-// Macros
-#define f first
-#define s second
-#define pb push_back
-#define mp make_pair
-#define f(i,n) for(int i=0;i<n;i++)
-#define rl(i,m,n) for(int i=n;i>=m;i--)
-#define vr(v) v.begin(),v.end()
-#define rv(v) v.end(),v.begin()
-
 
 // Mathematical functions
 ll gcd(ll a, ll b){if (b == 0)return a;return gcd(b, a % b);} //__gcd 
@@ -68,19 +50,15 @@ bool isPerfectSquare(ll x){if (x >= 0) {ll sr = sqrt(x);return (sr * sr == x);}r
 //Code
 void solve()
 {
-    ll n;
-    cin>>n;
-    
-    
-    
+
 }
 //Main
-int main()
+signed main()
 {
     Code By SetBitCoder
     ll t;
     cin>>t;
-    fl(i,t)
+    for(int i=0;i<t;i++)
     {
         solve();
     }
@@ -94,3 +72,8 @@ int main()
     return 0;
 }
 //End
+
+
+
+
+
