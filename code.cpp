@@ -50,7 +50,13 @@ bool isPerfectSquare(ll x){if (x >= 0) {ll sr = sqrt(x);return (sr * sr == x);}r
 //Code
 void solve()
 {
+int m,n,i,j,k;
 
+
+cin>>n>>m>>k;
+
+
+    
 }
 //Main
 signed main()
@@ -72,6 +78,9 @@ signed main()
     return 0;
 }
 //End
+
+
+
 
 
 
