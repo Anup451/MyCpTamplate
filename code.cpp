@@ -52,7 +52,11 @@ void solve()
 {
 int m,n,i,j;
 
-
+cin>>n;
+vector<int>v(n);
+for(int i=0;i<n;i++)cin>>v[i];
+    
+    for(auto it:v)cout<<it<<endl;
     
 }
 //Main
