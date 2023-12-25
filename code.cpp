@@ -4,6 +4,19 @@
 // Branch :Computer Science And Engineering
 // Linkedin :https://www.linkedin.com/in/anup-jujagar-531430203/
 
+
+// Fulfill your desire,
+// Ignite the fire,
+// Bat through the tough times,
+// Sometimes it’s 263, sometimes 49.
+// Life can put you in a pickle,
+// Laugh through like it’s a tickle,
+// Whether you get a hundred or a duck,
+// Life goes on, don’t get stuck.
+// There is no map.
+// Ride the tide,
+// You are your own guide.
+
 #include <iostream>
 #include <bits/stdc++.h>
 // #include <sys/resource.h>
@@ -56,15 +69,31 @@ cin>>n;
 vector<int>v(n);
 for(int i=0;i<n;i++)cin>>v[i];
     
-    for(auto it:v)cout<<it<<endl;
+    // int ans=n/2;
+    
+    vector<int>ans(n);
+int x=0;
+    sort(v.begin(),v.end());
+    for(int i=0;i<n;i++){
+        if(i%2==1)ans[i]=v[x++];
+    }   
+    j=n/2;
+    for(int i=0;i<n;i++){
+        if(i%2==0)ans[i]=v[x++];
+    }
+    (n<=2)?cout<<0<<endl:((n%2==0)?cout<<n/2-1<<endl:cout<<n/2<<endl);
+    for(auto it:ans)cout<<it<<" ";
+    cout<<endl;
+
+    
     
 }
 //Main
 signed main()
 {
     Code By SetBitCoder
-    ll t;
-    cin>>t;
+    ll t=1;
+    // cin>>t;
     for(int i=0;i<t;i++)
     {
         solve();
