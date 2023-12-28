@@ -1,4 +1,3 @@
-
 // Auther :Anup Suresh Jujagar
 // B.tech :Indian Institute Of Information Technology, Dharwad
 // Branch :Computer Science And Engineering
@@ -20,11 +19,11 @@
 #include <iostream>
 #include <bits/stdc++.h>
 // #include <sys/resource.h>
-// #include <ext/pb_ds/assoc_container.hpp>
-// #include <ext/pb_ds/tree_policy.hpp>
+#include <ext/pb_ds/assoc_container.hpp>
+#include <ext/pb_ds/tree_policy.hpp>
 using namespace std;
-// using namespace chrono;
-// using namespace __gnu_pbds;
+using namespace chrono;
+using namespace __gnu_pbds;
 
 //Speed
 #define Code ios_base::sync_with_stdio(false);
@@ -40,6 +39,10 @@ using ull= unsigned long long;
 const lld pi= 3.141592653589793238;
 const ll INF= LONG_LONG_MAX;
 const ll mod=1e9+7;
+
+typedef tree<int, null_type, less<int>, rb_tree_tag,
+             tree_order_statistics_node_update>
+    pbds;
 
 // Mathematical functions
 ll gcd(ll a, ll b){if (b == 0)return a;return gcd(b, a % b);} //__gcd 
@@ -66,26 +69,7 @@ void solve()
 int m,n,i,j;
 
 cin>>n;
-vector<int>v(n);
-for(int i=0;i<n;i++)cin>>v[i];
-    
-    // int ans=n/2;
-    
-    vector<int>ans(n);
-int x=0;
-    sort(v.begin(),v.end());
-    for(int i=0;i<n;i++){
-        if(i%2==1)ans[i]=v[x++];
-    }   
-    j=n/2;
-    for(int i=0;i<n;i++){
-        if(i%2==0)ans[i]=v[x++];
-    }
-    (n<=2)?cout<<0<<endl:((n%2==0)?cout<<n/2-1<<endl:cout<<n/2<<endl);
-    for(auto it:ans)cout<<it<<" ";
-    cout<<endl;
-
-    
+$1
     
 }
 //Main
@@ -93,7 +77,7 @@ signed main()
 {
     Code By SetBitCoder
     ll t=1;
-    // cin>>t;
+    cin>>t;
     for(int i=0;i<t;i++)
     {
         solve();
@@ -108,11 +92,6 @@ signed main()
     return 0;
 }
 //End
-
-
-
-
-
 
 
 
